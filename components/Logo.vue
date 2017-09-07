@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    LOGO
+    Adrian//Payne
   </div>
 </template>
 
