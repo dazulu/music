@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    Adrian//Payne
+    🎶AdrianPayne
   </div>
 </template>
 
