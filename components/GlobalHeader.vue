@@ -1,7 +1,9 @@
 <template>
-  <div class="header">
-    <Logo />
-    <Navigation />
+  <div>
+    <div class="header">
+      <Logo />
+      <Navigation />
+    </div>
   </div>
 </template>
 
@@ -22,5 +24,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: $padding;
+  }
+
+  .header__sub {
+    display: flex;
+    justify-content: flex-end;
   }
 </style>
