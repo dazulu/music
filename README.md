@@ -8,11 +8,12 @@ I'm probably going to ship this as a statically rendered site. Depends what func
 ### ToDo
 - [x] Set up Nuxt.js skeleton
 - [x] Header and responsive navigation
+- [x] Intro section 
+- [ ] F.A.Q. section
+- [ ] Contact section
+- [ ] Integrate Patreon API
 - [ ] Integrate YouTube API
 - [ ] Integrate Instagram API
-- [ ] Home page 
-- [ ] About page
-- [ ] Contact page
 - [ ] More social links
 - [ ] Integrate tracking
 
