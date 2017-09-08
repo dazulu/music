@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <div class="header">
       <Logo />
       <Navigation />
@@ -8,8 +8,8 @@
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
-  import Navigation from '~/components/Navigation.vue'
+  import Logo from '~/components/atoms/Logo.vue'
+  import Navigation from '~/components/molecules/Navigation.vue'
 
   export default {
     components: {
@@ -20,11 +20,15 @@
 </script>
 
 <style lang="scss">
+  .wrapper {
+    padding: 0 $padding;
+  }
+
   .header {
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: $padding;
   }
 
   .header__sub {

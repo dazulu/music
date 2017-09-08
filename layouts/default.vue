@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import GlobalHeader from '~/components/GlobalHeader.vue'
+  import GlobalHeader from '~/components/organisms/GlobalHeader.vue'
 
   export default {
     components: {
@@ -21,11 +21,10 @@
   }
 
   body {
-      background: url('/assets/images/bg.jpg') top center no-repeat;
+      background: url('/assets/images/bg.jpg') top left no-repeat;
       background-size: cover;
       font-family: "Quicksand", sans-serif;
       margin: 0;
-      padding: $padding;
   }
 
   html {

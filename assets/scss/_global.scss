@@ -1,0 +1,14 @@
+.wrapper {
+  padding: 0 $padding;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $padding;
+  color: $pure-white;
+  font-weight: 700;
+  font-family: $font-family;
+}

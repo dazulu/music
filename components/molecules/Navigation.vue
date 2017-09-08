@@ -24,7 +24,7 @@
 </template>
 
 <script>
-  import BurgerButton from '~/components/BurgerButton.vue'
+  import BurgerButton from '~/components/atoms/BurgerButton.vue'
 
   export default {
     components: {
@@ -135,6 +135,10 @@
             background: nth($colors-list, $i);
           }
         }
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
     
       &::after {

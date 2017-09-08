@@ -28,10 +28,8 @@ export default {
     font-family: $font-family;
     font-weight: 700;
     letter-spacing: -1px;
+    position: relative;
     z-index: 11;
-    position: fixed;
-    top: 30px;
-    right: 15px;
     padding: 6px;
     transition: all 0.4s ease;
     outline: 0;
