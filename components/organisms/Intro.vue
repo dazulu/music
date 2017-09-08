@@ -35,6 +35,7 @@
     color: $pure-white;
     letter-spacing: -3px;
     line-height: 7.5vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
   }
 
   .pre {
