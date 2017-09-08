@@ -5,6 +5,21 @@ This is a personal web site to support my singing on https://www.patreon.com/adr
 
 I'm probably going to ship this as a statically rendered site. Depends what functionality is needed along the way.
 
+### ToDo
+- [x] Set up Nuxt.js skeleton
+- [x] Header and responsive navigation
+- [ ] Integrate YouTube API
+- [ ] Integrate Instagram API
+- [ ] Home page 
+- [ ] About page
+- [ ] Contact page
+- [ ] More social links
+- [ ] Integrate tracking
+
+
+## Preview
+ While under development, `master` will be auto-deployed to _Heroku_ at: http://adrian-payne-music.herokuapp.com/
+
 ## Tech Stack
 - Using Nuxt.js https://nuxtjs.org/
   - Uses Vue 2 https://github.com/vuejs/vue
@@ -23,7 +38,4 @@ $ npm run dev
 # build for production and launch server
 $ npm run build
 $ npm start
-
-# generate static project
-$ npm run generate
 ```
