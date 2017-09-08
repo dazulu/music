@@ -19,45 +19,29 @@
         <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
       </ul>
     </nav>
-    <button v-on:click="toggleMenu" class="menu__button">MENU</button>
+    <BurgerButton />
   </div>
 </template>
 
 <script>
-export default {
-  methods: {
-    toggleMenu: () => {
-      document.querySelector('.menu__button').classList.toggle('button--open')
-      document.querySelector('.nav').classList.toggle('nav--open')
+  import BurgerButton from '~/components/BurgerButton.vue'
+
+  export default {
+    components: {
+      BurgerButton
     }
   }
-}
 </script>
 
 <style lang="scss">
-  .menu__button {
-    cursor: pointer;
-    width: 60px;
-    height: 40px;
-    background: none;
-    border: 0;
-    color: $pure-white;
-    font-size: 18px;
-    font-family: $font-family;
-    font-weight: 700;
-    letter-spacing: -1px;
-    z-index: 11;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-  }
-
   .nav {
-    display: none;
+    display: flex;
+    justify-content: center;
     width: 100vw;
+    overflow: hidden;
     height: 100vh;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.88);
     flex-direction: column;
     position: absolute;
     top: 0;
@@ -65,10 +49,19 @@ export default {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    pointer-events: none;
+    opacity: 0;
+    transform-origin: center center;
+    transform: scale(0) rotatex(30deg);
+    transition: all 400ms ease-out;
   }
 
   .nav--open {
-    display: flex;
+    border-top: 10px solid #a7263a;
+    border-bottom: 10px solid #a7263a;
+    transform: scale(1) rotatex(0deg);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .nav__link {
@@ -81,10 +74,11 @@ export default {
     text-transform: uppercase;
     text-decoration: none;
     height: 100%;
-    font-size: 4.5vh;
+    font-size: 4.2vh;
   }
 
   .nav__item {
+    max-height: 13vh;
     flex: 1;
   }
 
@@ -103,11 +97,11 @@ export default {
   }
 
   @media only screen and (min-width: 768px) {
-    .menu__button {
-      display: none;
-    }
 
     .nav {
+      opacity: 1;
+      transform: scale(1);
+      transition: none;
       display: flex;
       background: none;
       flex-direction: row;
@@ -116,6 +110,7 @@ export default {
       left: auto;
       height: auto;
       width: auto;
+      pointer-events: auto;
     }
 
     .nav__item {

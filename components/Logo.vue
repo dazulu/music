@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    🎶AdrianPayne
+    Adrian//Payne
   </div>
 </template>
 
@@ -8,6 +8,7 @@
   .logo {
     color: $pure-white;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 400;
+    z-index: 11;
   }
 </style>
