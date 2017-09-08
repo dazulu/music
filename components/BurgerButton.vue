@@ -1,5 +1,5 @@
 <template>
-  <button v-on:click="toggleMenu" class="menu__button">
+  <button v-on:click="toggleMenu" class="menu__button" aria-label="Toggle Menu">
     <div class="button__line"></div>
     <div class="button__line"></div>
     <div class="button__line"></div>

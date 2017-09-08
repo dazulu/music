@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav>
+    <nav role="navigation">
       <ul class="nav">
         <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
         <li class="nav__item">
@@ -35,33 +35,39 @@
 
 <style lang="scss">
   .nav {
+    background: rgba(0, 0, 0, 0.88);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100vw;
     overflow: hidden;
     height: 100vh;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.88);
-    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     list-style-type: none;
     padding: 0;
     margin: 0;
     pointer-events: none;
     opacity: 0;
-    transform-origin: center center;
-    transform: scale(0) rotatex(30deg);
-    transition: all 400ms ease-out;
+    transform-origin: bottom center;
+    transform: translateY(100vh);
+    transition: all 400ms ease;
   }
 
   .nav--open {
-    border-top: 10px solid #a7263a;
-    border-bottom: 10px solid #a7263a;
-    transform: scale(1) rotatex(0deg);
-    opacity: 1;
+    border-bottom: 10px solid $sunglow;
+    transform: translateY(0);
     pointer-events: auto;
+    opacity: 1;
+
+    .nav__item {
+      transform: translateY(3vh);
+    }
   }
 
   .nav__link {
@@ -80,6 +86,9 @@
   .nav__item {
     max-height: 13vh;
     flex: 1;
+    transition-delay: 500ms;
+    transform: translateY(15vh);
+    transition: all 1s ease;
   }
 
   .social__icon {
@@ -97,7 +106,6 @@
   }
 
   @media only screen and (min-width: 768px) {
-
     .nav {
       opacity: 1;
       transform: scale(1);
@@ -111,11 +119,14 @@
       height: auto;
       width: auto;
       pointer-events: auto;
+      border: 0;
     }
 
     .nav__item {
       margin: 0 12px;
       flex: 0 1 auto;
+      transform: translateY(0) !important;
+      transition: none;
 
       $colors-list: $dodger-blue $sunglow $bright-sun $emerald $medium-purple;
       @for $i from 1 through length($colors-list) {
