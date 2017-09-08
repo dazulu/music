@@ -16,8 +16,6 @@
 </script>
 
 <style lang="scss">
-  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
   html, body {
     height: 100%;
   }
