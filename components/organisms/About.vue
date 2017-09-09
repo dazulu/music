@@ -43,7 +43,6 @@
   }
 
   .embed-container {
-    flex: 1;
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -74,8 +73,8 @@
     }
 
     .video {
-      display: flex;
-      align-items: center;
+      position: relative;
+      margin-top: 2%;
       flex: 1;
     }
   }
