@@ -8,14 +8,14 @@ I'm probably going to ship this as a statically rendered site. Depends what func
 ### ToDo
 - [x] Set up Nuxt.js skeleton
 - [x] Header and responsive navigation
-- [x] Intro section 
+- [x] Intro section
+- [x] About. section
 - [ ] F.A.Q. section
 - [ ] Contact section
-- [ ] Integrate Patreon API
-- [ ] Integrate YouTube API
-- [ ] Integrate Instagram API
-- [ ] More social links
 - [ ] Integrate tracking
+- [ ] ? Integrate Patreon API
+- [ ] ? Integrate YouTube API
+- [ ] ? Integrate Instagram API
 
 
 ## Preview
