@@ -57,8 +57,8 @@
     background: $patreon url('/assets/images/patreon-logo.png') no-repeat 14px center;
     background-size: 27px;
     padding-left: 54px;
-    margin-right: $padding;
-    margin-bottom: $padding;
+    margin-right: $paddingButton;
+    margin-bottom: $paddingButton;
 
     &:hover {
       background-color: darken($patreon, 5%);

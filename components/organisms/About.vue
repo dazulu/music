@@ -24,8 +24,8 @@
 <style lang="scss" scoped>
   .about__wrapper {
     background: $pure-white;
-    padding-top: $padding * 4;
-    padding-bottom: $padding * 4;
+    padding-top: $padding * 2;
+    padding-bottom: $padding * 3;
   }
 
   h2 {

@@ -7,7 +7,7 @@
 <style lang="scss">
   .logo {
     min-width: 240px;
-    max-width: 349px;
+    max-width: 320px;
     width: 30vw;
     z-index: 11;
   }
