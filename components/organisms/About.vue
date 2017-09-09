@@ -29,13 +29,13 @@
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 0;
   }
 
   p {
     font-size: 1.2rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
   }
 
   .text {
