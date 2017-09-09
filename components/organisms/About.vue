@@ -1,0 +1,82 @@
+<template>
+  <div class="about__wrapper">
+    <div class="wrapper about">
+
+      <div class="text">
+        <h2>About Me</h2>
+        <p>Hey there! I'm Adrian Payne. Born and raised in Ireland but now living in the beautiful city of Hamburg, Germany.</p>
+        <p>I've always had an interest in singing and musical theatre though never actually got around to doing all that much with it up until now. I recently started taking singing lessons and want to share the results with you as I go along. Maybe one day I can quit the day job and do this full time! Right? Right??</p>
+      </div>
+
+      <div class="video">
+        <div class='embed-container'>
+          <iframe src='https://www.youtube.com/embed/SGlx27Iu8xA' frameborder='0' allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+<script>
+</script>
+
+<style lang="scss" scoped>
+  .about__wrapper {
+    background: $pure-white;
+    padding-top: $padding * 4;
+    padding-bottom: $padding * 4;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+
+  .text {
+    margin-bottom: $padding * 2;
+  }
+
+  .embed-container {
+    flex: 1;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  @media only screen and (min-width: 800px) {
+    .about {
+      display: flex;
+    }
+
+    .text {
+      flex: 1.3;
+      margin-right: $padding;
+      margin-bottom: 0;
+    }
+
+    .video {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+  }
+</style>

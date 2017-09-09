@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <GlobalHeader />
     <nuxt />
   </div>
@@ -7,7 +7,6 @@
 
 <script>
   import GlobalHeader from '~/components/organisms/GlobalHeader.vue'
-
   export default {
     components: {
       GlobalHeader
@@ -20,13 +19,6 @@
     height: 100%;
   }
 
-  body {
-      background: url('/assets/images/bg.jpg') top left no-repeat;
-      background-size: cover;
-      font-family: "Quicksand", sans-serif;
-      margin: 0;
-  }
-
   html {
     box-sizing: border-box;
     font-size: 16px;
@@ -35,6 +27,14 @@
     -webkit-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+      background: url('/assets/images/bg.jpg') top left no-repeat;
+      background-size: cover;
+      font-family: "Quicksand", sans-serif;
+      margin: 0;
+      min-width: 400px;
   }
 
   *, *:before, *:after {

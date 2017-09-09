@@ -1,5 +1,5 @@
 <template>
-  <div class="intro">
+  <div class="wrapper intro">
     <div>
       <h2 class="heading">
         <span class="pre">SUPPORT ME</span> <br />
@@ -27,7 +27,7 @@
   .intro {
     display: flex;
     align-items: center;
-    height: 88vh;
+    height: 78vh;
     position: relative;
   }
 
