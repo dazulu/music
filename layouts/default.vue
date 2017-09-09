@@ -34,7 +34,6 @@
       background-size: cover;
       font-family: "Quicksand", sans-serif;
       margin: 0;
-      min-width: 400px;
   }
 
   *, *:before, *:after {
