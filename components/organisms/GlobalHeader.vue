@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <div class="header">
       <Logo />
       <Navigation />
@@ -20,10 +20,6 @@
 </script>
 
 <style lang="scss">
-  .wrapper {
-    padding: 0 $padding;
-  }
-
   .header {
     height: 12vh;
     display: flex;

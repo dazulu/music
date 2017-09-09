@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper intro">
+  <div class="intro">
     <div>
       <h2 class="heading">
         <span class="pre">SUPPORT ME</span> <br />

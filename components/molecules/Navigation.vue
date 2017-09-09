@@ -41,21 +41,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    height: 100vh;
     z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     list-style-type: none;
     padding: 0;
     margin: 0;
     pointer-events: none;
     opacity: 0;
     transform-origin: bottom center;
-    transform: translateY(100vh);
+    transform: translateY(100%);
     transition: all 400ms ease;
   }
 
