@@ -1,14 +1,14 @@
 <template>
   <div class="logo">
-    Adrian//Payne
+    <img class="logo" src="~/assets/images/logo.png" alt="Adrian Payne Music" />
   </div>
 </template>
 
 <style lang="scss">
   .logo {
-    color: $pure-white;
-    font-size: 26px;
-    font-weight: 400;
+    min-width: 240px;
+    max-width: 349px;
+    width: 30vw;
     z-index: 11;
   }
 </style>
