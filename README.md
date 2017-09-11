@@ -10,8 +10,9 @@ I'm probably going to ship this as a statically rendered site. Depends what func
 - [x] Header and responsive navigation
 - [x] Intro section
 - [x] About. section
-- [ ] F.A.Q. section
+- [x] F.A.Q. section
 - [ ] Contact section
+- [ ] Affiliate links
 - [ ] Integrate tracking
 - [ ] ? Integrate Patreon API
 - [ ] ? Integrate YouTube API

@@ -1,6 +1,6 @@
 <template>
   <div class="intro__wrapper">
-    <div class="wrapper intro">
+    <div class="content__wrapper intro">
       <div>
         <h2 class="heading">
           <span class="pre">SUPPORT ME</span> <br />

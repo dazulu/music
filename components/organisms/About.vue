@@ -1,6 +1,6 @@
 <template>
-  <div class="about__wrapper">
-    <div class="wrapper about">
+  <div class="padding__wrapper">
+    <div class="content__wrapper about">
 
       <div class="text">
         <h2>About Me</h2>

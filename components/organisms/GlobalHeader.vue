@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="content__wrapper">
     <div class="header">
       <Logo />
       <Navigation />
