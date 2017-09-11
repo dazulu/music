@@ -11,6 +11,7 @@ I'm probably going to ship this as a statically rendered site. Depends what func
 - [x] Intro section
 - [x] About. section
 - [x] F.A.Q. section
+- [x] Photo divider section
 - [ ] Contact section
 - [ ] Affiliate links
 - [ ] Integrate tracking

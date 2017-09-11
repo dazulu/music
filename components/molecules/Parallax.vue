@@ -24,22 +24,22 @@
   }
 
   .parallax {
-    background: url('~/assets/images/parallax_800.jpg') center center no-repeat fixed;
+    background: url('~/assets/images/parallax_800.jpg') center center no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 250px;
   }
 
   @media only screen and (min-width: 800px) {
     .parallax {
+      height: 400px;
       background-image: url('~/assets/images/parallax_1024.jpg');
-      background-size: cover;
+      background-attachment: fixed;
     }
   }
 
   @media only screen and (min-width: 1024px) {
     .parallax {
       background-image: url('~/assets/images/parallax_1600.jpg');
-      background-size: cover;
     }
   }
 </style>
