@@ -25,8 +25,10 @@
         const scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop
         if (scrollTop > 80) {
           header.classList.add(sticky)
+          document.body.classList.add('nav-spacer')
         } else {
           header.classList.remove(sticky)
+          document.body.classList.remove('nav-spacer')
         }
       }
 
@@ -68,10 +70,15 @@
       animation-fill-mode: forwards;
       width: 100%;
       z-index: 11;
+      top: 0;
 
       .header {
         height: 53px;
       }
+    }
+
+    .nav-spacer {
+      margin-top: 80px;
     }
   }
 
