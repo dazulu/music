@@ -54,6 +54,7 @@
   }
 
   .button--patreon {
+    color: #fff;
     background: $patreon url('/assets/images/patreon-logo.png') no-repeat 14px center;
     background-size: 27px;
     padding-left: 54px;
@@ -66,6 +67,7 @@
   }
 
   .button--youtube {
+    color: #fff;
     background: $youtube;
     position: relative;
     padding-left: 52px;

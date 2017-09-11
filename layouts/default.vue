@@ -40,12 +40,6 @@
     box-sizing: inherit;
   }
 
-  .wrapper {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
   @media only screen and (min-width: 1024px) {
     body {
       background-image: url('/assets/images/bg_1200.jpg');

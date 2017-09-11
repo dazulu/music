@@ -1,6 +1,6 @@
 <template>
   <div id="contact" class="padding__wrapper">
-    <div class="content__wrapper wrapper contact">
+    <div class="content__wrapper contact">
         <h2>Contact</h2>
         <p>Coming Soon.</p>
         <p>Probably tomorrow.</p>

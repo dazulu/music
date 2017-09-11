@@ -1,5 +1,5 @@
 <template>
-  <div class="content__wrapper">
+  <div class="header__wrapper">
     <div class="header">
       <Logo />
       <Navigation />
@@ -17,7 +17,7 @@
       Navigation
     },
     mounted () {
-      const header = document.querySelector('.content__wrapper')
+      const header = document.querySelector('.header__wrapper')
       const sticky = 'sticky'
       let ticking = false
 
@@ -48,12 +48,16 @@
 </script>
 
 <style lang="scss">
+
   .header {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all 300ms ease;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 $padding * 2;
   }
 
   .header__sub {
