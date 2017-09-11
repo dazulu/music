@@ -1,22 +1,20 @@
 <template>
   <div class="parallax__wrapper">
-    <arrow-divider-solid />
+    <arrow-divider solid />
     <div class="parallax" :class="background">
         <social-links v-if="showSocialLinks" />
     </div>
-    <arrow-divider-trans />
+    <arrow-divider trans />
   </div>
 </template>
 
 <script>
-  import ArrowDividerTrans from '~/components/atoms/ArrowDividerTrans.vue'
-  import ArrowDividerSolid from '~/components/atoms/ArrowDividerSolid.vue'
+  import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
   import SocialLinks from '~/components/molecules/SocialLinks.vue'
 
   export default {
     components: {
-      ArrowDividerSolid,
-      ArrowDividerTrans,
+      ArrowDivider,
       SocialLinks
     },
     props: {
