@@ -18,7 +18,7 @@
       </div>
       <img class="singer" src="~/assets/images/adrian-payne.png" alt="Adrian Payne" />
     </div>
-    <arrow-divider trans />
+    <arrow-divider />
   </div>
 </template>
 

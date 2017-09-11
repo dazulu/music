@@ -1,7 +1,7 @@
 <template>
   <div class="arrow__wrapper">
     <div v-if="solid" class="solid__separator solid"></div>
-    <div v-if="trans" class="trans__separator">
+    <div v-if="!solid" class="trans__separator">
       <div></div>
       <div></div>
     </div>
@@ -14,10 +14,6 @@
       solid: {
         type: Boolean,
         default: false
-      },
-      trans: {
-        type: Boolean,
-        default: true
       }
     }
   }

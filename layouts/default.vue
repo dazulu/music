@@ -30,7 +30,7 @@
   }
 
   body {
-      background: url('/assets/images/bg.jpg') top left no-repeat;
+      background: url('/assets/images/bg_800.jpg') top left no-repeat;
       background-size: cover;
       font-family: "Quicksand", sans-serif;
       margin: 0;
@@ -44,5 +44,17 @@
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    body {
+      background-image: url('/assets/images/bg_1200.jpg');
+    }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    body {
+      background-image: url('/assets/images/bg_1600.jpg');
+    }
   }
 </style>

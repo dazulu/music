@@ -4,7 +4,7 @@
     <div class="parallax" :class="background">
         <social-links v-if="showSocialLinks" />
     </div>
-    <arrow-divider trans />
+    <arrow-divider />
   </div>
 </template>
 
@@ -43,6 +43,10 @@
     background-image: url('~/assets/images/parallax2_800.jpg');
   }
 
+  .parallax--bg3 {
+    background-image: url('~/assets/images/parallax3_800.jpg');
+  }
+
   .parallax {
     background-position: center center;
     background-repeat: no-repeat;
@@ -62,6 +66,10 @@
       background-image: url('~/assets/images/parallax2_1024.jpg');
     }
 
+    .parallax--bg3 {
+      background-image: url('~/assets/images/parallax3_1024.jpg');
+    }
+
     .parallax {
       height: 400px;
       background-attachment: fixed;
@@ -75,6 +83,14 @@
 
     .parallax--bg2 {
       background-image: url('~/assets/images/parallax2_1600.jpg');
+    }
+
+    .parallax--bg3 {
+      background-image: url('~/assets/images/parallax3_1600.jpg');
+    }
+
+    .parallax {
+      height: 500px;
     }
   }
 </style>

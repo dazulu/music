@@ -4,7 +4,7 @@
     <About />
     <Parallax showSocialLinks />
     <Faq />
-    <Parallax background="parallax--bg2" />
+    <Parallax background="parallax--bg3" />
     <Contact />
   </div>
 </template>
