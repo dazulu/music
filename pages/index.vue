@@ -2,23 +2,27 @@
   <div>
     <Intro />
     <About />
-    <Parallax />
+    <Parallax showSocialLinks />
     <Faq />
+    <Parallax background="parallax--bg2" />
+    <Contact />
   </div>
 </template>
 
 <script>
   import Intro from '~/components/organisms/Intro.vue'
   import About from '~/components/organisms/About.vue'
-  import Faq from '~/components/organisms/Faq.vue'
   import Parallax from '~/components/molecules/Parallax.vue'
+  import Faq from '~/components/organisms/Faq.vue'
+  import Contact from '~/components/organisms/Contact.vue'
 
   export default {
     components: {
       Intro,
       About,
       Faq,
-      Parallax
+      Parallax,
+      Contact
     }
   }
 </script>
