@@ -36,7 +36,7 @@
   .intro {
     display: flex;
     align-items: center;
-    height: 78vh;
+    height: 72vh;
     position: relative;
   }
 
@@ -91,19 +91,31 @@
   
   @media only screen and (min-width: 768px) {
     .singer {
-      position: fixed;
-      bottom: 0;
+      position: absolute;
       display: block;
-      right: 0;
+      right: 2%;
+      bottom: -30px;
       max-width: 55vw;
       width: 100%;
       z-index: -1;
+      animation: slideSinger 1s ease-out;
+      animation-fill-mode: forwards;
+      transform: translateY(30px);
     }
   }
 
   @media only screen and (min-width: 1024px) {
     .singer {
       width: 700px;
+    }
+  }
+
+  @keyframes slideSinger {
+    from {
+      transform: translateY(30px);
+    }
+    to {
+      transform: translateY(0);
     }
   }
 </style>
