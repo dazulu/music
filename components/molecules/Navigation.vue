@@ -33,7 +33,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .nav {
     background: rgba(0, 0, 0, 0.88);
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -173,6 +173,23 @@
 
     .patreon__icon {
       height: 22px;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    .sticky {
+      .navigation {
+        position: relative;
+      }
+
+      .nav__link {
+        color: #333;
+      }
+
+      .social__icon {
+        fill: #333;
+      }
     }
   }
 </style>

@@ -11,4 +11,12 @@
     width: 100%;
     z-index: 11;
   }
+
+  @media only screen and (min-width: 768px) {
+    .sticky {
+      .logo {
+        filter: brightness(30%);
+      }
+    }
+  }
 </style>
