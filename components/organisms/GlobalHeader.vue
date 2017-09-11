@@ -57,12 +57,19 @@
     transition: all 300ms ease;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 $padding * 2;
+    padding: 0 $padding;
   }
 
   .header__sub {
     display: flex;
     justify-content: flex-end;
+  }
+
+  
+  @media only screen and (min-width: 700px) {
+    .header {
+      padding: 0 $padding * 2;
+    }
   }
 
   @media only screen and (min-width: 768px) {
