@@ -5,7 +5,7 @@
         <div class="columns">
           <div>
             <h3>What gear do you use to record audio?</h3>
-            <p>I switch between using a <a href="http://www.rode.com/microphones/nt-usb"><em>RØDE NT-USB</em></a> and a <a href="http://www.rode.com/microphones/nt1-a"><em>RØDE NT1-A</em></a> condenser mic put through a <a href="https://us.focusrite.com/usb-audio-interfaces/scarlett-2i2"><em>Focusrite Scarlett 2i2</em></a>. Sadly, my laptop has trouble with the latter combination so I only record with that on my PC.</p>
+            <p>I switch between using a <a target="_blank" rel="noopener" href="http://www.rode.com/microphones/nt-usb"><em>RØDE NT-USB</em></a> and a <a target="_blank" rel="noopener" href="http://www.rode.com/microphones/nt1-a"><em>RØDE NT1-A</em></a> condenser mic put through a <a target="_blank" rel="noopener" href="https://us.focusrite.com/usb-audio-interfaces/scarlett-2i2"><em>Focusrite Scarlett 2i2</em></a>. Sadly, my laptop has trouble with the latter combination so I only record with that on my PC.</p>
           </div>
 
           <div>
@@ -15,12 +15,12 @@
               
           <div>
             <h3>What software do you use to create videos?</h3>
-            <p>While I'd love to get my hands on Adobe Premiere and After Affects, I currently use <a href="https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwitmqrI8pzWAhUGPRQKHXOXC80QFgg4MAA&url=https%3A%2F%2Ffilmora.wondershare.com%2F&usg=AFQjCNHtgaOZZj3Vq5-dV98eQQQhcxNJOg"><em>Wondershare Filmora</em></a> which I picked up cheap in a deal. It gets the job done for now!</p>
+            <p>While I'd love to get my hands on Adobe Premiere and After Affects, I currently use <a target="_blank" rel="noopener" href="https://filmora.wondershare.com/video-editor/"><em>Wondershare Filmora</em></a> which I picked up cheap in a deal. It gets the job done for now!</p>
           </div>
               
           <div>
             <h3>What software do you use to edit audio?</h3>
-            <p>I use the completely free program <a href="http://www.audacityteam.org/"><em>Audacity</em></a> for all audio editing.</p>
+            <p>I use the completely free program <a target="_blank" rel="noopener" href="http://www.audacityteam.org/"><em>Audacity</em></a> for all audio editing.</p>
           </div>
               
           <div>
@@ -35,16 +35,16 @@
               
           <div>
             <h3>Have you ever had voice training?</h3>
-            <p>I started getting voice lessons recently with <a href="http://www.birtekoenigshoff.de/">birtekoenigshoff.de</a>. Up until last year I had no training apart from listening to my dad rehearsing musical theatre when I was a kid. It stuck with me and I love that stuff!</p>
+            <p>I started getting voice lessons recently with <a target="_blank" rel="noopener" href="http://www.birtekoenigshoff.de/">birtekoenigshoff.de</a>. Up until last year I had no training apart from listening to my dad rehearsing musical theatre when I was a kid. It stuck with me and I love that stuff!</p>
           </div>
               
           <div>
             <h3>Where can I find you on social media?</h3>
             <ul>
-              <li><strong>YouTube: </strong> <a href="https://www.youtube.com/channel/UCNYBL7n1Jk9CM3NRqapHaqw">Adrian Payne's YouTube channel</a></li>
-              <li><strong>Patreon: </strong> <a href="https://www.patreon.com/adrianpayne">patreon.com/adrianpayne</a></li>
-              <li><strong>Twitter: </strong> <a href="https://twitter.com/dazulu">twitter.com/dazulu</a></li>
-              <li><strong>Instagram: </strong> <a href="https://www.instagram.com/teach_solais/">instagram.com/teach_solais</a> and <a href="https://www.instagram.com/adrianpaynemusic/">instagram.com/adrianpaynemusic</a></li>
+              <li><strong>YouTube: </strong> <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCNYBL7n1Jk9CM3NRqapHaqw">Adrian Payne's YouTube channel</a></li>
+              <li><strong>Patreon: </strong> <a target="_blank" rel="noopener" href="https://www.patreon.com/adrianpayne">patreon.com/adrianpayne</a></li>
+              <li><strong>Twitter: </strong> <a target="_blank" rel="noopener" href="https://twitter.com/dazulu">twitter.com/dazulu</a></li>
+              <li><strong>Instagram: </strong> <a target="_blank" rel="noopener" href="https://www.instagram.com/teach_solais/">instagram.com/teach_solais</a> and <a target="_blank" rel="noopener" href="https://www.instagram.com/adrianpaynemusic/">instagram.com/adrianpaynemusic</a></li>
             </ul>
           </div>
         </div>
@@ -56,23 +56,6 @@
 </script>
 
 <style lang="scss" scoped>
-  h2 {
-    font-size: 2.2rem;
-    margin-top: 0;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 0.8rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
-  }
-
   li {
     word-wrap: break-word;
     font-size: 1.2rem;
