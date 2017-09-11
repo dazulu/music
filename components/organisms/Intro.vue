@@ -89,12 +89,13 @@
   
   @media only screen and (min-width: 768px) {
     .singer {
-      position: absolute;
+      position: fixed;
       bottom: 0;
       display: block;
       right: 0;
       max-width: 55vw;
       width: 100%;
+      z-index: -1;
     }
   }
 
