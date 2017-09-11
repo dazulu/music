@@ -21,10 +21,31 @@
   font-family: $font-family;
 }
 
-p {
-  margin: 0 0 $padding 0;
+h2 {
+  font-size: 2.2rem;
+  margin-top: 0;
 }
 
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin: 0 0 2rem 0;
+}
+
+a {
+  color: $curious-blue;
+
+  &:hover,
+  &:visited {
+    color:  $curious-blue;
+  }
+}
 
 @media only screen and (min-width: 700px) {
   .content__wrapper {
