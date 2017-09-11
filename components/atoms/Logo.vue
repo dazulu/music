@@ -6,9 +6,9 @@
 
 <style lang="scss">
   .logo {
-    min-width: 240px;
-    max-width: 320px;
-    width: 30vw;
+    padding-right: 10px;
+    max-width: 280px;
+    width: 100%;
     z-index: 11;
   }
 </style>
