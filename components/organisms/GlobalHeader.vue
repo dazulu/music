@@ -47,7 +47,7 @@
 
 <style lang="scss">
   .header {
-    height: 12vh;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;

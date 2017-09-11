@@ -1,5 +1,5 @@
 <template>
-  <div class="padding__wrapper">
+  <div id="faq" class="padding__wrapper">
     <div class="content__wrapper faq">
         <h2>Frequently Asked Questions</h2>
         <div class="columns">

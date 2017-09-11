@@ -1,5 +1,5 @@
 <template>
-  <div class="padding__wrapper">
+  <div id="about" class="padding__wrapper">
     <div class="content__wrapper about">
 
       <div class="text">
