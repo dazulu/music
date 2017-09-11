@@ -2,7 +2,7 @@
   <div id="faq" class="padding__wrapper">
     <div class="content__wrapper faq">
         <h2>Frequently Asked Questions</h2>
-        <div class="columns">
+        <div class="grid">
           <div>
             <h3>What gear do you use to record audio?</h3>
             <p>I switch between using a <a target="_blank" rel="noopener" href="http://www.rode.com/microphones/nt-usb"><em>RØDE NT-USB</em></a> and a <a target="_blank" rel="noopener" href="http://www.rode.com/microphones/nt1-a"><em>RØDE NT1-A</em></a> condenser mic put through a <a target="_blank" rel="noopener" href="https://us.focusrite.com/usb-audio-interfaces/scarlett-2i2"><em>Focusrite Scarlett 2i2</em></a>. Sadly, my laptop has trouble with the latter combination so I only record with that on my PC.</p>
@@ -62,12 +62,17 @@
     margin-bottom: 3px;
   }
 
-  @media only screen and (min-width: 700px) {
-    .columns {
-      column-gap: $padding * 2;
-      column-count: 2;
-      column-rule: 1px dotted #ddd;
-      break-inside: avoid;
+  @media only screen and (min-width:640px) {
+    .grid {
+        display: grid;
+        grid-gap: 4%;
+        grid-template-columns: repeat(2, 48%);
+    }
+  }
+
+    @media only screen and (min-width:1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>
