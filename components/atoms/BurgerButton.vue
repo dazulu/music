@@ -12,6 +12,7 @@ export default {
     toggleMenu: () => {
       document.querySelector('.menu__button').classList.toggle('is--open')
       document.querySelector('.nav').classList.toggle('nav--open')
+      document.body.classList.toggle('no-touchy-action')
     }
   }
 }
@@ -79,6 +80,10 @@ export default {
           }
         }
     }
+  }
+
+  .no-touchy-action {
+    touch-action: none;
   }
 
   @media only screen and (min-width: 768px) {

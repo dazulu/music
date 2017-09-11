@@ -48,7 +48,6 @@
 </script>
 
 <style lang="scss">
-
   .header {
     height: 80px;
     display: flex;
@@ -65,7 +64,6 @@
     justify-content: flex-end;
   }
 
-  
   @media only screen and (min-width: 700px) {
     .header {
       padding: 0 $padding * 2;
