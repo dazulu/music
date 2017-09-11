@@ -11,7 +11,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .arrow__wrapper {
     position: relative;
   }

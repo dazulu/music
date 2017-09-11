@@ -18,16 +18,16 @@
       </div>
       <img class="singer" src="~/assets/images/adrian-payne.png" alt="Adrian Payne" />
     </div>
-    <ArrowDivider />
+    <arrow-divider-trans />
   </div>
 </template>
 
 <script>
-  import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
+  import ArrowDividerTrans from '~/components/atoms/ArrowDividerTrans.vue'
 
   export default {
     components: {
-      ArrowDivider
+      ArrowDividerTrans
     }
   }
 </script>
