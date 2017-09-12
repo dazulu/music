@@ -1,7 +1,7 @@
 <template>
   <div class="arrow__wrapper">
     <div v-if="solid" class="solid__separator solid"></div>
-    <div v-if="!solid" class="trans__separator">
+    <div v-if="!solid" class="trans__separator" :class="color">
       <div></div>
       <div></div>
     </div>
@@ -14,12 +14,16 @@
       solid: {
         type: Boolean,
         default: false
+      },
+      color: {
+        type: String,
+        default: 'default--color'
       }
     }
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .arrow__wrapper {
     position: relative;
   }
@@ -57,9 +61,27 @@
     bottom: 0px;
     display: block;
 
+    &.default--color {
+      > div {
+        background: $pure-white;
+
+        &:after {
+          border-bottom: $padding solid $pure-white;
+        }
+      }
+    }
+
+    &.blue--color {
+      > div {
+        background: $pickled-bluewood;
+
+        &:after {
+          border-bottom: $padding solid $pickled-bluewood;
+        }
+      }
+    }
 
     > div {
-      background: $pure-white;
       display: inline-block;
       height: $padding;
       position: absolute;
@@ -70,7 +92,6 @@
         content: '';
         position: absolute;
         top: 0;
-        border-bottom: $padding solid $pure-white;
       }
 
       &:first-child {

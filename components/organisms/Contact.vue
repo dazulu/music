@@ -1,4 +1,5 @@
 <template>
+<div>
   <div id="contact" class="contact__wrapper padding__wrapper">
     <div class="content__wrapper contact">
         <h2>Contact</h2>
@@ -20,10 +21,13 @@
       </form>
     </div>
     </div>
+    <arrow-divider color="blue--color" />
   </div>
 </template>
 
 <script>
+  import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
+
   const toggleFieldClass = (target) => {
     if (target.value.length > 0) {
       target.classList.add('has--text')
@@ -33,6 +37,9 @@
   }
 
   export default {
+    components: {
+      ArrowDivider
+    },
     mounted () {
       const inputs = document.querySelectorAll('input')
       const textarea = document.querySelector('textarea')
@@ -58,6 +65,8 @@
     position: relative;
     background: url('~/assets/images/hamburg-map_800.jpg') center center no-repeat;
     background-size: cover;
+    overflow: hidden;
+    padding-bottom: $padding * 4;
   }
 
   .contact {
@@ -65,7 +74,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
 
     &:before {
       background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
