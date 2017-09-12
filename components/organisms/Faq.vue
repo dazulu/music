@@ -58,6 +58,7 @@
 <style lang="scss" scoped>
   h2 {
     text-align: center;
+    margin-bottom: $padding * 2;
   }
 
   li {

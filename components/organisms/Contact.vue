@@ -88,7 +88,8 @@
   }
 
   h2 {
-      z-index: 2;
+    z-index: 2;
+    margin-bottom: $padding * 2;
   }
 
   form {
