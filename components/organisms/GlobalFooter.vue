@@ -1,6 +1,6 @@
 <template>
   <div class="footer__wrapper">
-      <span>&lt;3</span>
+      <span>&lt;3 my patrons</span>
   </div>
 </template>
 
