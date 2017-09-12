@@ -4,13 +4,13 @@
     <div class="content__wrapper contact">
         <h2>Contact</h2>
 
-      <form action="https://formspree.io/connect@adrianpayne.me" method="POST">
+      <form action="https://formspree.io/connect@adrianpayne.me" method="POST" min="1" >
         <div>
           <input name="name" type="text" required />
           <label for="name">Your name</label>
         </div>
         <div>
-          <input name="_replyto" type="email" min="1" required />
+          <input name="_replyto" type="email" required />
           <label for="_replyto">Your email</label>
         </div>
         <div>
@@ -48,12 +48,12 @@
 
       for (let i = 0; i < inputs.length; i++) {
         toggleFieldClass(inputs[i])
-        inputs[i].addEventListener('keyup', (e) => {
+        inputs[i].addEventListener('change', (e) => {
           toggleFieldClass(e.currentTarget)
         })
       }
 
-      textarea.addEventListener('keyup', (e) => {
+      textarea.addEventListener('change', (e) => {
         toggleFieldClass(e.currentTarget)
       })
     }
