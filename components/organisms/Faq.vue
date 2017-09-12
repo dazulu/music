@@ -56,6 +56,10 @@
 </script>
 
 <style lang="scss" scoped>
+  h2 {
+    text-align: center;
+  }
+
   li {
     word-wrap: break-word;
     font-size: 1.2rem;
