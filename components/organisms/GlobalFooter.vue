@@ -1,6 +1,6 @@
 <template>
   <div class="footer__wrapper">
-      <span>Footer</span>
+      <span>&lt;3</span>
   </div>
 </template>
 
@@ -15,6 +15,7 @@
     text-align: center;
     color: $pure-white;
     padding: $padding * 6 $padding;
+    font-family: sans-serif;
     font-weight: 700;
     font-size: 40px;
   }
