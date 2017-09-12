@@ -46,6 +46,7 @@
     if (document.querySelector('.menu__button').classList.contains('is--open')) {
       document.querySelector('.menu__button').classList.remove('is--open')
       document.querySelector('.nav').classList.remove('nav--open')
+      document.body.classList.remove('no-touchy-action')
     }
 
     scrolling = true
