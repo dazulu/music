@@ -63,7 +63,7 @@
     }
 
     .parallax--bg2 {
-      background-image: url('~/assets/images/parallax2_1024.jpg');
+      background-image: url('~/assets/images/parallax2_1200.jpg');
     }
 
     .parallax--bg3 {
