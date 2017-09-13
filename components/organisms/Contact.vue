@@ -5,10 +5,6 @@
 
       <form action="https://formspree.io/connect@adrianpayne.me" method="POST" min="1" >
         <div>
-          <input name="name" type="text" required />
-          <label for="name">Your name</label>
-        </div>
-        <div>
           <input name="_replyto" type="email" required />
           <label for="_replyto">Your email</label>
         </div>
