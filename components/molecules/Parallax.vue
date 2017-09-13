@@ -57,6 +57,20 @@
     justify-content: center;
   }
 
+
+  @media only screen and (min-width: 600px) {
+    .parallax {
+      height: 300px;
+      background-attachment: fixed;
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    .parallax {
+      height: 400px;
+    }
+  }
+
   @media only screen and (min-width: 800px) {
     .parallax--bg1 {
       background-image: url('~/assets/images/parallax1_1024.jpg');
@@ -68,11 +82,6 @@
 
     .parallax--bg3 {
       background-image: url('~/assets/images/parallax3_1024.jpg');
-    }
-
-    .parallax {
-      height: 400px;
-      background-attachment: fixed;
     }
   }
 
