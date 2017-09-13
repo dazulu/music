@@ -54,28 +54,34 @@
     jump(to, options)
   }
 
+  const trackEvent = (type) => {
+    if (typeof window !== 'undefined' && typeof window.ga !== 'undefined') {
+      window.ga('send', 'event', 'navigation', 'navigate', type)
+    }
+  }
+
   export default {
     components: {
       BurgerButton
     },
     methods: {
-      toAbout: (event) => {
-        window.ga('send', 'event', 'navigation', 'navigate', 'about')
+      toAbout: () => {
         scroll('#about', { ...jumpParams })
+        trackEvent('about')
       },
-      toFaq: (event) => {
-        window.ga('send', 'event', 'navigation', 'navigate', 'faq')
+      toFaq: () => {
         scroll('#faq', { ...jumpParams })
+        trackEvent('faq')
       },
-      toContact: (event) => {
-        window.ga('send', 'event', 'navigation', 'navigate', 'contact')
+      toContact: () => {
         scroll('#contact', { ...jumpParams })
+        trackEvent('contact')
       },
-      toYouTube: (event) => {
-        window.ga('send', 'event', 'navigation', 'navigate', 'youtube')
+      toYouTube: () => {
+        trackEvent('youtube')
       },
-      toPatreon: (event) => {
-        window.ga('send', 'event', 'navigation', 'navigate', 'patreon')
+      toPatreon: () => {
+        trackEvent('patreon')
       }
     }
   }

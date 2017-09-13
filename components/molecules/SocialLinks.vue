@@ -48,19 +48,25 @@
 </template>
 
 <script>
+  const trackEvent = (type) => {
+    if (typeof window !== 'undefined' && typeof window.ga !== 'undefined') {
+      window.ga('send', 'event', 'social', 'navigate', type)
+    }
+  }
+
   export default {
     methods: {
-      toYouTube: (event) => {
-        window.ga('send', 'event', 'social', 'navigate', 'youtube')
+      toYouTube: () => {
+        trackEvent('youtube')
       },
-      toPatreon: (event) => {
-        window.ga('send', 'event', 'social', 'navigate', 'patreon')
+      toPatreon: () => {
+        trackEvent('patreon')
       },
-      toInstagram: (event) => {
-        window.ga('send', 'event', 'social', 'navigate', 'instagram')
+      toInstagram: () => {
+        trackEvent('instagram')
       },
-      toTwitter: (event) => {
-        window.ga('send', 'event', 'social', 'navigate', 'twitter')
+      toTwitter: () => {
+        trackEvent('twitter')
       }
     }
   }

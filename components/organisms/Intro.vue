@@ -37,16 +37,22 @@
 <script>
   import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
 
+  const trackEvent = (type) => {
+    if (typeof window !== 'undefined' && typeof window.ga !== 'undefined') {
+      window.ga('send', 'event', 'social', 'navigate', type)
+    }
+  }
+
   export default {
     components: {
       ArrowDivider
     },
     methods: {
-      toYouTube: (event) => {
-        window.ga('send', 'event', 'cta', 'navigate', 'youtube')
+      toYouTube: () => {
+        trackEvent('youtube')
       },
-      toPatreon: (event) => {
-        window.ga('send', 'event', 'cta', 'navigate', 'patreon')
+      toPatreon: () => {
+        trackEvent('patreon')
       }
     }
   }
