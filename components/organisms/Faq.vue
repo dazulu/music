@@ -25,17 +25,17 @@
               
           <div>
             <h3>Where are you from?</h3>
-            <p>Born and raised in the Republic of Ireland 🇮🇪</p>
+            <p>Born and raised in the Republic of Ireland 🇮🇪 I love the sea and wind!</p>
           </div>
               
           <div>
             <h3>Who made your website?</h3>
-            <p>All me! When not singing, I'm a web developer, which is what I learned in that blurry university period of life.</p>
+            <p>All me and feedback/questions welcome! :) When not singing, I'm a web developer, which is what I learned in that blurry university period of life. The code is up on <a v-on:click="toGithub" target="_blank" rel="noopener" href="https://github.com/dazulu/music">Github</a> if you like that sort of thing.</p>
           </div>
               
           <div>
             <h3>Have you ever had voice training?</h3>
-            <p>I started getting voice lessons recently with <a target="_blank" rel="noopener" href="http://www.birtekoenigshoff.de/">birtekoenigshoff.de</a>. Up until last year I had no training apart from listening to my dad rehearsing musical theatre when I was a kid. It stuck with me and I love that stuff!</p>
+            <p>I started getting voice lessons recently with <a target="_blank" rel="noopener" href="http://www.birtekoenigshoff.de/">birtekoenigshoff.de</a>. She's great! Up until last year I had no training apart from listening to my dad rehearsing musical theatre when I was a kid. It stuck with me and I love that stuff!</p>
           </div>
               
           <div>
@@ -53,6 +53,15 @@
 </template>
 
 <script>
+  export default {
+    methods: {
+      toGithub: () => {
+        if (typeof window !== 'undefined' && typeof window.ga !== 'undefined') {
+          window.ga('send', 'event', 'social', 'navigate', 'github-link')
+        }
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
