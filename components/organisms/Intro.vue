@@ -1,5 +1,5 @@
 <template>
-  <div class="intro__wrapper">
+  <div>
     <div class="content__wrapper intro">
       <div>
         <h2 class="heading">
@@ -43,6 +43,22 @@
     }
   }
 
+  const setHeight = () => {
+    const viewWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+    const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
+    let percentage = 0.72 // 72%
+
+    if (viewWidth >= 1280) {
+      percentage = 0.80 // 80%
+    }
+
+    const percentageHeight = Math.floor(viewHeight * percentage)
+    const introHeight = percentageHeight < 410 ? 410 : percentageHeight
+
+    document.querySelector('.intro').style.height = `${introHeight}px`
+  }
+
   export default {
     components: {
       ArrowDivider
@@ -54,6 +70,9 @@
       toPatreon: () => {
         trackEvent('patreon')
       }
+    },
+    mounted () {
+      setHeight()
     }
   }
 </script>
@@ -62,7 +81,6 @@
   .intro {
     display: flex;
     align-items: center;
-    min-height: 410px;
     height: 72vh;
     position: relative;
   }
@@ -134,6 +152,12 @@
   @media only screen and (min-width: 1024px) {
     .singer {
       width: 700px;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .intro {
+      height: 80vh;
     }
   }
 
