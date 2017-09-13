@@ -87,15 +87,15 @@
 
   .heading {
     margin: 0 0 $padding * 2 0;
-    font-size: 5.2rem;
+    font-size: 4rem;
     color: $pure-white;
     letter-spacing: -3px;
-    line-height: 3.3rem;
+    line-height: 3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
   }
 
   .pre {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 
   .button--patreon {
@@ -135,6 +135,15 @@
   }
   
   @media only screen and (min-width: 768px) {
+    .heading {
+      font-size: 5.2rem;
+      line-height: 3.3rem;
+    }
+
+    .pre {
+      font-size: 2.8rem;
+    }
+
     .singer {
       position: absolute;
       display: block;
