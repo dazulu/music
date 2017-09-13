@@ -62,6 +62,7 @@
   .intro {
     display: flex;
     align-items: center;
+    min-height: 410px;
     height: 72vh;
     position: relative;
   }
