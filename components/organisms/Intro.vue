@@ -87,15 +87,15 @@
 
   .heading {
     margin: 0 0 $padding * 2 0;
-    font-size: calc(1rem + 9vh);
+    font-size: 5.2rem;
     color: $pure-white;
     letter-spacing: -3px;
-    line-height: 7.5vh;
+    line-height: 3.3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
   }
 
   .pre {
-    font-size: calc(1rem + 3vh);
+    font-size: 2.8rem;
   }
 
   .button--patreon {
