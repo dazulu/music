@@ -1,33 +1,18 @@
 [![Donate](https://img.shields.io/badge/Donate-Patreon-orange.svg)](https://www.patreon.com/bePatron?c=560812) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/paynepay) [![Subscribe](https://img.shields.io/badge/Subscribe-Youtube-red.svg)](https://www.youtube.com/watch?v=SGlx27Iu8xA)
 
 ## What is this?
-This is a personal web site to support my singing on https://www.patreon.com/adrianpayne.
+This is a personal web site to support my singing aspirations on https://www.patreon.com/adrianpayne.
 
-I'm probably going to ship this as a statically rendered site. Depends what functionality is needed along the way.
-
-### ToDo
-- [x] Set up Nuxt.js skeleton
-- [x] Header and responsive navigation
-- [x] Intro section
-- [x] About. section
-- [x] F.A.Q. section
-- [x] Photo divider section
-- [ ] Contact section
-- [ ] Affiliate links
-- [ ] Integrate tracking
-- [ ] ? Integrate Patreon API
-- [ ] ? Integrate YouTube API
-- [ ] ? Integrate Instagram API
-
-
-## Preview
- While under development, `master` will be auto-deployed to _Heroku_ at: http://adrian-payne-music.herokuapp.com/
+## Live Site
+The `master` branch is deployed to https://www.adrianpaynemusic.com/
 
 ## Tech Stack
-- Using Nuxt.js https://nuxtjs.org/
-  - Uses Vue 2 https://github.com/vuejs/vue
-  - Uses Webpack https://github.com/webpack/webpack
-  - Uses Babel-loader https://github.com/babel/babel-loader
+- Nuxt.js https://nuxtjs.org/
+  - Vue2 https://github.com/vuejs/vue
+  - Webpack https://github.com/webpack/webpack
+  - Babel-loader https://github.com/babel/babel-loader
+- Heroku for hosting https://heroku.com/
+- Cloudflare for DNS https://cloudflare.com/
   
 ## Build Setup
 
