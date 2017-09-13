@@ -13,6 +13,10 @@
   margin: 0 auto;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .button {
   cursor: pointer;
   text-decoration: none;

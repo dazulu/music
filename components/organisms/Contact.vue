@@ -1,5 +1,4 @@
 <template>
-<div>
   <div id="contact" class="contact__wrapper padding__wrapper">
     <div class="content__wrapper contact">
         <h2>Contact</h2>
@@ -20,8 +19,6 @@
         <button class="button button--submit" type="submit">Send</button>
       </form>
     </div>
-    </div>
-    <arrow-divider color="blue--color" />
   </div>
 </template>
 
@@ -63,8 +60,6 @@
 <style lang="scss" scoped>
   .contact__wrapper {
     position: relative;
-    background: url('~/assets/images/hamburg-map_800.jpg') center center no-repeat;
-    background-size: cover;
     overflow: hidden;
     padding-bottom: $padding * 4;
   }
@@ -103,7 +98,7 @@
   }
 
   label {
-    color: #444;
+    color: $pure-white;
     transition: all 150ms ease-out;
     pointer-events: none;
     position: absolute;
@@ -129,7 +124,6 @@
     border: 0;
     background: darken($emerald, 15%);
     background-size: 27px;
-    font-size: 1rem;
 
     &:hover {
       background-color: darken($emerald, 20%);
@@ -138,9 +132,9 @@
 
   input,
   textarea {
-    background: rgba(255,255,255,0.75);
-    border: 1px solid #888;
-    color: darken($curious-blue, 10%);
+    background: $pickled-bluewood;
+    border: none;
+    color: $pure-white;
     margin-bottom: $padding;
     padding: 27px 15px 10px 15px;
   }
@@ -150,30 +144,19 @@
   button {
     display: block;
     font-family: $font-family;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     width: 100%;
   }
 
   .has--text,
   input:focus,
   textarea:focus {
+    outline: none;
+
     + label {
-      color: #333;
       font-weight: 700;
       font-size: 0.8rem;
       transform: translateY(8px);
-    }
-  }
-
-  @media only screen and (min-width: 800px) {
-    .contact__wrapper {
-      background-image: url('~/assets/images/hamburg-map_1024.jpg');
-    }
-  }
-
-  @media only screen and (min-width: 1024px) {
-    .contact__wrapper {
-      background-image: url('~/assets/images/hamburg-map_1600.jpg');
     }
   }
 </style>
