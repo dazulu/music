@@ -42,15 +42,18 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
-  ** Modules configuration
+  ** Plugins configuration
   */
-  modules: [
-    ['@nuxtjs/google-analytics', { ua: 'UA-106361334-1' }]
+  plugins: [
+    { src: '~plugins/vue-analytics.js', ssr: false }
   ],
   /*
   ** Build configuration
   */
   build: {
+    vendor: [
+      'vue-analytics'
+    ],
     postcss: [
       require('autoprefixer')(),
     ],

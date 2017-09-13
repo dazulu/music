@@ -2,6 +2,7 @@
   <ul class="social">
       <li class="social__item">
         <a
+          v-on:click="toYouTube"
           target="_blank"
           rel="noopener"
           class="social__link youtube__link"
@@ -12,6 +13,7 @@
       </li>
       <li class="social__item">
         <a
+          v-on:click="toPatreon"
           target="_blank"
           rel="noopener"
           class="social__link patreon__link"
@@ -22,6 +24,7 @@
       </li>
       <li class="social__item">
         <a
+          v-on:click="toInstagram"
           target="_blank"
           rel="noopener"
           class="social__link instagram__link"
@@ -32,6 +35,7 @@
       </li>
       <li class="social__item">
         <a
+          v-on:click="toTwitter"
           target="_blank"
           rel="noopener"
           class="social__link twitter__link"
@@ -42,6 +46,25 @@
       </li>
   </ul>
 </template>
+
+<script>
+  export default {
+    methods: {
+      toYouTube: (event) => {
+        window.ga('send', 'event', 'social', 'navigate', 'youtube')
+      },
+      toPatreon: (event) => {
+        window.ga('send', 'event', 'social', 'navigate', 'patreon')
+      },
+      toInstagram: (event) => {
+        window.ga('send', 'event', 'social', 'navigate', 'instagram')
+      },
+      toTwitter: (event) => {
+        window.ga('send', 'event', 'social', 'navigate', 'twitter')
+      }
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
   .social  {

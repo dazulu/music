@@ -16,7 +16,7 @@
   "dependencies": {
     "jump.js": "^1.0.2",
     "nuxt": "^1.0.0-rc8",
-    "@nuxtjs/google-analytics": "*"
+    "vue-analytics": "^4.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
