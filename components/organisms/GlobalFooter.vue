@@ -3,6 +3,15 @@
     <arrow-divider solid />
     <div class="content__wrapper footer">
         <span>&lt;3 my patrons</span>
+        <ul class="patrons">
+          <li class="patron">Austin</li>
+          <li class="patron">Jonas</li>
+          <li class="patron">Jose</li>
+          <li class="patron">Nina</li>
+          <li class="patron">Sandra</li>
+          <li class="patron">Subwayjohn</li>
+          <li class="patron">Tom</li>
+        </ul>
     </div>
     <a
       v-on:click="toGithub"
@@ -41,12 +50,24 @@
     background-size: cover;
     position: relative;
     text-align: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: hsla(214, 56%, 14%, 0.7);
+    }
   }
 
   .footer {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
     padding-top: $padding * 7;
     padding-bottom: $padding * 6;
+    position: relative;
+    z-index: 1;
 
     span {
       color: $pure-white;
@@ -56,6 +77,24 @@
       line-height: 2.3rem;
       display: block;
     }
+  }
+
+  .patrons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .patron {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
+    color: $pure-white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0 10px;
   }
 
   .github-icon {
