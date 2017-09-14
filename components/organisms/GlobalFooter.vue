@@ -8,8 +8,8 @@
           <li class="patron">Jonas</li>
           <li class="patron">Jose</li>
           <li class="patron">Nina</li>
+          <li class="patron">Sabrican</li>
           <li class="patron">Sandra</li>
-          <li class="patron">Subwayjohn</li>
           <li class="patron">Tom</li>
         </ul>
     </div>
