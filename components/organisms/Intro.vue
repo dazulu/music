@@ -30,15 +30,13 @@
       </div>
       <img class="singer" src="~/assets/images/adrian-payne.png" alt="Adrian Payne" />
     </div>
-    <pre style="color: #666; background: #333; font-size:0.8rem; position: absolute; left: -2000px;">{{ patrons[0] }}</pre>
     <arrow-divider />
   </div>
 </template>
 
 <script>
-  import { mapState } from 'vuex'
   import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
-  
+
   const trackEvent = (type) => {
     if (typeof window !== 'undefined' && typeof window.ga !== 'undefined') {
       window.ga('send', 'event', 'social', 'navigate', type)
@@ -65,9 +63,6 @@
     components: {
       ArrowDivider
     },
-    computed: mapState([
-      'patrons'
-    ]),
     methods: {
       toYouTube: () => {
         trackEvent('youtube')

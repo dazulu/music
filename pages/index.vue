@@ -23,9 +23,6 @@
       Faq,
       Parallax,
       Contact
-    },
-    mounted: function () {
-      this.$store.dispatch('LOAD_PATRON_LIST')
     }
   }
 </script>
