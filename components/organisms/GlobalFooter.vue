@@ -106,7 +106,7 @@
   }
 
   .github-icon {
-    display: block;
+    display: inline-block;
     transform: translateY(-10px);
 
     svg {
