@@ -41,9 +41,6 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#3B8070' },
-  /*
-  ** Plugins configuration
-  */
   plugins: [
     { src: '~plugins/vue-analytics.js', ssr: false }
   ],
@@ -52,7 +49,8 @@ module.exports = {
   */
   build: {
     vendor: [
-      'vue-analytics'
+      'vue-analytics',
+      'axios'
     ],
     postcss: [
       require('autoprefixer')(),

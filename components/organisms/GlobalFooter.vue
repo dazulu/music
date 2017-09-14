@@ -3,14 +3,10 @@
     <arrow-divider solid />
     <div class="content__wrapper footer">
         <span>&lt;3 my patrons</span>
-        <ul class="patrons">
-          <li class="patron">Austin</li>
-          <li class="patron">Jonas</li>
-          <li class="patron">Jose</li>
-          <li class="patron">Nina</li>
-          <li class="patron">Sabrican</li>
-          <li class="patron">Sandra</li>
-          <li class="patron">Tom</li>
+        <ul v-if="patrons" class="patrons">
+          <li class="patron" v-for="patron in patrons">
+            <img class="patron__image" :src="patron.image" :alt="'Patron ' + patron.name" /> {{ patron.name }}
+          </li>
         </ul>
     </div>
     <a
@@ -26,6 +22,7 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex'
   import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
 
   export default {
@@ -38,7 +35,10 @@
           window.ga('send', 'event', 'social', 'navigate', 'github-icon')
         }
       }
-    }
+    },
+    computed: mapState([
+      'patrons'
+    ])
   }
 </script>
 
@@ -64,8 +64,8 @@
 
   .footer {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
-    padding-top: $padding * 7;
-    padding-bottom: $padding * 6;
+    padding-top: $padding * 5;
+    padding-bottom: $padding * 4;
     position: relative;
     z-index: 1;
 
@@ -80,11 +80,7 @@
   }
 
   .patrons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 15px 0 0 0;
+    margin: $padding 0 0 0;
     padding: 0;
     list-style-type: none;
   }
@@ -95,6 +91,18 @@
     font-weight: bold;
     font-size: 1.5rem;
     padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 3px 10px 3px;
+  }
+
+  .patron__image {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+    border: 3px solid $pure-white;
   }
 
   .github-icon {
