@@ -1,9 +1,10 @@
-[![Donate](https://img.shields.io/badge/Donate-Patreon-orange.svg)](https://www.patreon.com/bePatron?c=560812) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/paynepay) [![Subscribe](https://img.shields.io/badge/Subscribe-Youtube-red.svg)](https://www.youtube.com/watch?v=SGlx27Iu8xA)
+[![Subscribe](https://img.shields.io/badge/Subscribe-Patreon-orange.svg)](https://www.patreon.com/bePatron?c=560812) [![Subscribe](https://img.shields.io/badge/Subscribe-Youtube-red.svg)](https://www.youtube.com/watch?v=SGlx27Iu8xA)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/paynepay) 
 
 ## What is this?
 This is a personal web site to support my singing aspirations on https://www.patreon.com/adrianpayne.
 
-## Live Site
+## Live Site [![Heroku App Status](http://heroku-shields.herokuapp.com/adrian-payne-music)](https://www.adrianpaynemusic.com/)
 The `master` branch is deployed to https://www.adrianpaynemusic.com/
 
 ## Tech Stack
