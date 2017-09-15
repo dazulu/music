@@ -159,7 +159,7 @@
     height: 22px;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .nav {
       opacity: 1;
       transform: scale(1);
@@ -228,10 +228,7 @@
     .patreon__icon {
       height: 22px;
     }
-  }
 
-
-  @media only screen and (min-width: 768px) {
     .sticky {
       .navigation {
         position: relative;

@@ -86,7 +86,7 @@ export default {
     touch-action: none;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .menu__button {
       display: none;
     }

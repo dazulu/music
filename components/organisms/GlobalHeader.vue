@@ -70,7 +70,7 @@
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .sticky {
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
       background: rgba(255,255,255,0.97);

@@ -12,7 +12,7 @@
     z-index: 11;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .sticky {
       .logo {
         filter: brightness(30%);
