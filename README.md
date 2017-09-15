@@ -11,6 +11,7 @@ The `master` branch is deployed to https://www.adrianpaynemusic.com/
   - Vue2 https://github.com/vuejs/vue
   - Webpack https://github.com/webpack/webpack
   - Babel-loader https://github.com/babel/babel-loader
+- Implements the Patreon API https://docs.patreon.com/
 - Heroku for hosting https://heroku.com/
 - Cloudflare for DNS https://cloudflare.com/
   
