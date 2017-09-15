@@ -23,6 +23,10 @@
       Faq,
       Parallax,
       Contact
+    },
+    mounted () {
+      console.log('%c Support me on Patreon at patreon.com/adrianpayne ', 'background: #F96854; font-size: 20px; color: #FFFFFF')
+      console.log('%c Github repo for you dev tools lurkers <3 github.com/dazulu/music ', 'background: #333333; font-size: 14px; color: #BBBBBB')
     }
   }
 </script>
