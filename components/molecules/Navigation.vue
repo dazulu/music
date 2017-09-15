@@ -164,6 +164,33 @@
     height: 22px;
   }
 
+  @media (pointer: fine) and (min-width: 1024px){
+    .nav__item {
+      $colors-list: $dodger-blue $sunglow $bright-sun $emerald $medium-purple;
+      @for $i from 1 through length($colors-list) {
+        &:nth-child(#{$i}) {
+          &::after {
+            background: nth($colors-list, $i);
+          }
+        }
+      }
+    
+      &::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0;
+        transition: width 150ms ease-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   @media only screen and (min-width: 1024px) {
     .nav {
       opacity: 1;
@@ -187,31 +214,8 @@
       transform: translateY(0) !important;
       transition: none;
 
-      $colors-list: $dodger-blue $sunglow $bright-sun $emerald $medium-purple;
-      @for $i from 1 through length($colors-list) {
-        &:nth-child(#{$i}) {
-          &::after {
-            background: nth($colors-list, $i);
-          }
-        }
-      }
-
       &:last-child {
         margin-right: 0;
-      }
-    
-      &::after {
-        content: '';
-        display: block;
-        height: 3px;
-        width: 0;
-        transition: width 150ms ease-out;
-      }
-
-      &:hover {
-        &::after {
-          width: 100%;
-        }
       }
     }
 
