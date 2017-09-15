@@ -61,7 +61,6 @@
   @media only screen and (min-width: 600px) {
     .parallax {
       height: 300px;
-      background-attachment: fixed;
     }
   }
 
@@ -100,6 +99,12 @@
 
     .parallax {
       height: 500px;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .parallax {
+      background-attachment: fixed;
     }
   }
 </style>
