@@ -5,7 +5,9 @@
         <h3>&lt;3 my patrons</h3>
         <ul v-if="patrons" class="patrons">
           <li class="patron" v-for="patron in patrons">
-            <img class="patron__image" :src="patron.image" :alt="'Patron ' + patron.name" /> {{ patron.name }}
+            <a class="patron__link" :href="patron.url" target="_blank" rel="noopener">
+              <img class="patron__image" :src="patron.image" :alt="'Patron ' + patron.name" /> {{ patron.name }}
+            </a>
           </li>
         </ul>
         <link-button type="patreon" text="JOIN THEM!" />
@@ -93,13 +95,19 @@
   }
 
   .patron {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .patron__link {
+    display: flex;
+    align-items: center;
     color: $pure-white;
     font-weight: bold;
     font-size: 1.5rem;
     padding: 0 10px;
-    display: inline-flex;
-    align-items: center;
     margin: 0 3px 10px 3px;
+    text-decoration: none;
   }
 
   .patron__image {
@@ -109,6 +117,7 @@
     width: 40px;
     height: 40px;
     border: 3px solid $pure-white;
+    transition: all 250ms ease-out;
   }
 
   .github-icon {
@@ -125,6 +134,14 @@
   @media only screen and (min-width: 1024px) {
     .footer__wrapper {
       background-image: url('/assets/images/parallax2_1200.jpg');
+    }
+
+    .patron__link {
+      &:hover {
+        .patron__image {
+          transform: rotateZ(-20deg);
+        }
+      }
     }
   }
 

@@ -12,7 +12,8 @@ const groomPatronData = (data) => {
     if (item.attributes.first_name && item.attributes.created !== '2015-10-07T18:23:43+00:00') {
       filteredData.push({
         name: item.attributes.first_name,
-        image: item.attributes.thumb_url
+        image: item.attributes.thumb_url,
+        url: item.attributes.url
       })
     }
   })
