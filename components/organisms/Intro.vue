@@ -19,7 +19,7 @@
   import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
   import LinkButton from '~/components/atoms/LinkButton.vue'
 
-  const setHeight = () => {
+  const setHeight = (introElement) => {
     const viewWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
     const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 
@@ -31,8 +31,21 @@
 
     const percentageHeight = Math.floor(viewHeight * percentage)
     const introHeight = percentageHeight < 410 ? 410 : percentageHeight
+    console.log(introHeight)
+    introElement.style.height = `${introHeight}px`
+  }
 
-    document.querySelector('.intro').style.height = `${introHeight}px`
+  const setHeightOnResize = (introElement) => {
+    let ticking = false
+    window.addEventListener('resize', function (e) {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setHeight(introElement)
+          ticking = false
+        })
+      }
+      ticking = true
+    })
   }
 
   export default {
@@ -41,7 +54,9 @@
       ArrowDivider
     },
     mounted () {
-      setHeight()
+      let introElement = document.querySelector('.intro')
+      setHeight(introElement)
+      setHeightOnResize(introElement)
     }
   }
 </script>
