@@ -31,7 +31,6 @@
 
     const percentageHeight = Math.floor(viewHeight * percentage)
     const introHeight = percentageHeight < 410 ? 410 : percentageHeight
-    console.log(introHeight)
     introElement.style.height = `${introHeight}px`
   }
 
