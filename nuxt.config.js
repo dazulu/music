@@ -51,7 +51,8 @@ module.exports = {
   build: {
     vendor: [
       'vue-analytics',
-      'axios'
+      'axios',
+      'timing.js'
     ],
     postcss: [
       require('autoprefixer')(),
