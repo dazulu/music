@@ -13,16 +13,12 @@
   margin: 0 auto;
 }
 
+a.button,
 button {
   -webkit-tap-highlight-color: transparent;
-}
-
-.button {
+  color: $pure-white;
   cursor: pointer;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: $paddingButton;
   color: $pure-white;
   font-weight: 700;

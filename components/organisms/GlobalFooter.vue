@@ -2,12 +2,13 @@
   <div class="footer__wrapper">
     <arrow-divider solid />
     <div class="content__wrapper footer">
-        <span>&lt;3 my patrons</span>
+        <h3>&lt;3 my patrons</h3>
         <ul v-if="patrons" class="patrons">
           <li class="patron" v-for="patron in patrons">
             <img class="patron__image" :src="patron.image" :alt="'Patron ' + patron.name" /> {{ patron.name }}
           </li>
         </ul>
+        <link-button type="patreon" text="JOIN THEM!" />
     </div>
     <a
       v-on:click="toGithub"
@@ -24,10 +25,12 @@
 <script>
   import { mapState } from 'vuex'
   import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
+  import LinkButton from '~/components/atoms/LinkButton.vue'
 
   export default {
     components: {
-      ArrowDivider
+      ArrowDivider,
+      LinkButton
     },
     methods: {
       toGithub: () => {
@@ -63,30 +66,33 @@
   }
 
   .footer {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
     padding-top: $padding * 5;
     padding-bottom: $padding * 4;
     position: relative;
     z-index: 1;
+  }
 
-    span {
-      color: $pure-white;
-      text-align: center;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 2.3rem;
-      display: block;
-    }
+  h3 {
+    color: $pure-white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 2.3rem;
+    display: block;
   }
 
   .patrons {
-    margin: $padding 0 0 0;
+    margin: $padding 0 $padding 0;
     padding: 0;
     list-style-type: none;
   }
 
+  h3,
   .patron {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
+  }
+
+  .patron {
     color: $pure-white;
     font-weight: bold;
     font-size: 1.5rem;
