@@ -8,11 +8,8 @@ This is a personal web site to support my singing aspirations on https://www.pat
 The `master` branch is deployed to https://www.adrianpaynemusic.com/
 
 ## Tech Stack
-- Nuxt.js https://nuxtjs.org/
-  - Vue2 https://github.com/vuejs/vue
-  - Webpack https://github.com/webpack/webpack
-  - Babel-loader https://github.com/babel/babel-loader
-- Implements the Patreon API https://docs.patreon.com/
+- Nuxt.js (Vue2) https://nuxtjs.org/
+- Patreon API https://docs.patreon.com/
 - Heroku for hosting https://heroku.com/
 - Cloudflare for DNS https://cloudflare.com/
   
