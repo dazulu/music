@@ -103,7 +103,7 @@
     display: flex;
     align-items: center;
     color: $pure-white;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5rem;
     padding: 0 10px;
     margin: 0 3px 10px 3px;

@@ -28,8 +28,7 @@ module.exports = {
       { name: 'google-site-verification', content: '2gEx10a38rEv1bE30P_NPYqHtTXpK8w8uHwVRrIHxzw'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Quicksand:300,400,700' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
