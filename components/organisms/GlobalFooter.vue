@@ -2,7 +2,7 @@
   <div class="footer__wrapper">
     <arrow-divider solid />
     <div class="content__wrapper footer">
-        <h3>&lt;3 my patrons</h3>
+        <h3>{{ $t("footer.title") }}</h3>
         <ul v-if="patrons" class="patrons">
           <li class="patron" v-for="patron in patrons">
             <a class="patron__link" :href="patron.url" target="_blank" rel="noopener">
@@ -10,7 +10,7 @@
             </a>
           </li>
         </ul>
-        <link-button type="patreon" text="JOIN THEM!" />
+        <link-button type="patreon" text="footer.patreonButton" />
     </div>
     <a
       v-on:click="toGithub"

@@ -3,11 +3,11 @@
     <div class="content__wrapper intro">
       <div>
         <h2 class="heading">
-          <span class="pre">SUPPORT ME</span> <br />
-          ONLINE
+          <span class="pre">{{ $t("intro.preTitle") }}</span> <br />
+          {{ $t("intro.title") }}
         </h2>
-          <link-button type="patreon" text="BECOME A PATRON!" />
-          <link-button type="youtube" text="SUBSCRIBE!" />
+          <link-button type="patreon" text="intro.patreonButton" />
+          <link-button type="youtube" text="intro.youtubeButton" />
       </div>
       <img class="singer" src="~/assets/images/adrian-payne.png" alt="Adrian Payne" />
     </div>

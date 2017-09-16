@@ -3,9 +3,8 @@
     <div class="content__wrapper about">
 
       <div class="text">
-        <h2>About Me</h2>
-        <p>Hey there! I'm Adrian Payne. Born and raised in Ireland but now living in the beautiful city of Hamburg, Germany.</p>
-        <p>I've always had an interest in singing and musical theatre though never actually got around to doing all that much with it up until now. I recently started taking singing lessons and want to share the results with you as I go along. Maybe one day I can quit the day job and do this full time! Right? Right??</p>
+        <h2>{{ $t("about.title") }}</h2>
+        <div v-html="$t('about.text')"></div>
       </div>
 
       <div class="video">

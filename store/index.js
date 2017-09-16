@@ -23,18 +23,25 @@ const groomPatronData = (data) => {
 const createStore = () => {
   return new Vuex.Store({
     state: {
-      patrons: []
+      patrons: [],
+      locales: ['en'],
+      locale: 'en'
     },
     mutations: {
-      setPatrons (state, data) {
+      SET_PATRONS (state, data) {
         state.patrons = data
+      },
+      SET_LANG (state, locale) {
+        if (state.locales.indexOf(locale) !== -1) {
+          state.locale = locale
+        }
       }
     },
     actions: {
       async nuxtServerInit ({commit}, {req}) {
         if (!process.env.PATREON_TOKEN || !process.env.PATREON_USER_ID) return
         return axios.get(`https://api.patreon.com/oauth2/api/campaigns/${process.env.PATREON_USER_ID}/pledges`).then((response) => {
-          commit('setPatrons', groomPatronData(response.data))
+          commit('SET_PATRONS', groomPatronData(response.data))
         }).catch((err) => {
           console.log('Patreon API Error:', err)
         })

@@ -18,7 +18,8 @@
     "jump.js": "^1.0.2",
     "nuxt": "^1.0.0-rc8",
     "timing.js": "^1.2.0",
-    "vue-analytics": "^4.4.0"
+    "vue-analytics": "^4.4.0",
+    "vue-i18n": "^7.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",

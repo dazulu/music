@@ -1,18 +1,18 @@
 <template>
   <div id="contact" class="contact__wrapper padding__wrapper">
     <div class="content__wrapper contact">
-        <h2>Contact</h2>
+        <h2>{{ $t("contact.title") }}</h2>
 
       <form action="https://formspree.io/connect@adrianpayne.me" method="POST" min="1" >
         <div>
           <input name="_replyto" type="email" required />
-          <label for="_replyto">Your email</label>
+          <label for="_replyto">{{ $t("contact.emailLabel") }}</label>
         </div>
         <div>
           <textarea name="message" required></textarea>
-          <label for="message">Your message</label>
+          <label for="message">{{ $t("contact.commentLabel") }}</label>
         </div>
-        <button class="button button--submit" type="submit">Send</button>
+        <button class="button button--submit" type="submit">{{ $t("contact.button") }}</button>
       </form>
     </div>
   </div>

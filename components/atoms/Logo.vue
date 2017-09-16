@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <img class="logo" src="~/assets/images/logo.png" alt="Adrian Payne Music" />
+    <img class="logo" src="~/assets/images/logo.png" :alt="$t('logoAlt')" />
   </div>
 </template>
 
