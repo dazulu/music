@@ -19,7 +19,6 @@
         '/images/actor/adrian3.png',
         '/images/actor/adrian4.png',
         '/images/actor/adrian5.png',
-        '/images/actor/adrian6.png',
         '/images/actor/adrian1.png'
       ]
 
@@ -33,7 +32,7 @@
         if (next === 1) {
           actor.style.maxWidth = '700px'
           actor.style.right = '-14%'
-        } else if (next === 4) {
+        } else if (next === 3) {
           actor.style.maxWidth = '1000px'
           actor.style.right = ''
         } else {
