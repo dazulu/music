@@ -6,7 +6,7 @@
       target="_blank"
       rel="noopener"
       class="button button--patreon"
-      href="https://www.patreon.com/bePatron?u=2412507"
+      href="https://www.patreon.com/adrianpayne"
     >
       <svg class="icon icon--patreon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 96">
         <g fill="none" fill-rule="evenodd">
