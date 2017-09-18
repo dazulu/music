@@ -25,7 +25,13 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'All about me, Adrian Payne, and my aspirations to become a great singer one way or another. Support me on Patreon!' },
-      { name: 'google-site-verification', content: '2gEx10a38rEv1bE30P_NPYqHtTXpK8w8uHwVRrIHxzw' }
+      { name: 'google-site-verification', content: '2gEx10a38rEv1bE30P_NPYqHtTXpK8w8uHwVRrIHxzw' },
+      { property: 'og:title', content: 'Adrian Payne Music | Cover songs and shenanigans' },
+      { property: 'og:description', content: 'All about me, Adrian Payne, and my aspirations to become a great singer one way or another. Support me on Patreon!' },
+      { property: 'og:image', content: 'https://www.adrianpaynemusic.com/images/og-image.jpg' },
+      { property: 'og:url', content: 'https://www.adrianpaynemusic.com' },
+      { property: 'og:type', content: 'website' }
+      
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
