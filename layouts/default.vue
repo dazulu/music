@@ -37,6 +37,7 @@
       background: url('/assets/images/bg_800.jpg') top left no-repeat;
       background-size: cover;
       font-family: "Quicksand", sans-serif;
+      overflow-x: hidden;
       margin: 0;
   }
 

@@ -9,7 +9,7 @@
           <link-button type="patreon" text="intro.patreonButton" />
           <link-button type="youtube" text="intro.youtubeButton" />
       </div>
-      <img class="singer" src="~/assets/images/adrian-payne.png" alt="Adrian Payne" />
+      <image-switcher />
     </div>
     <arrow-divider />
   </div>
@@ -18,6 +18,7 @@
 <script>
   import ArrowDivider from '~/components/atoms/ArrowDivider.vue'
   import LinkButton from '~/components/atoms/LinkButton.vue'
+  import ImageSwitcher from '~/components/organisms/ImageSwitcher.vue'
 
   const setHeight = (introElement) => {
     const viewWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
@@ -50,7 +51,8 @@
   export default {
     components: {
       LinkButton,
-      ArrowDivider
+      ArrowDivider,
+      ImageSwitcher
     },
     mounted () {
       let introElement = document.querySelector('.intro')
@@ -80,10 +82,6 @@
   .pre {
     font-size: 2rem;
   }
-
-  .singer {
-    display: none;
-  }
   
   @media only screen and (min-width: 768px) {
     .heading {
@@ -94,39 +92,11 @@
     .pre {
       font-size: 2.8rem;
     }
-
-    .singer {
-      position: absolute;
-      display: block;
-      right: 2%;
-      bottom: -30px;
-      max-width: 55vw;
-      width: 100%;
-      z-index: -1;
-      animation: slideSinger 1s ease-out;
-      animation-fill-mode: forwards;
-      transform: translateY(30px);
-    }
-  }
-
-  @media only screen and (min-width: 1024px) {
-    .singer {
-      width: 700px;
-    }
   }
 
   @media only screen and (min-width: 1280px) {
     .intro {
       height: 80vh;
-    }
-  }
-
-  @keyframes slideSinger {
-    from {
-      transform: translateY(30px);
-    }
-    to {
-      transform: translateY(0);
     }
   }
 </style>
