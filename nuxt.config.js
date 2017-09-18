@@ -25,7 +25,7 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'All about me, Adrian Payne, and my aspirations to become a great singer one way or another. Support me on Patreon!' },
-      { name: 'google-site-verification', content: '2gEx10a38rEv1bE30P_NPYqHtTXpK8w8uHwVRrIHxzw'}
+      { name: 'google-site-verification', content: '2gEx10a38rEv1bE30P_NPYqHtTXpK8w8uHwVRrIHxzw' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -59,10 +59,11 @@ module.exports = {
       'vue-analytics',
       'vue-i18n',
       'axios',
-      'timing.js'
+      'timing.js',
+      'jump.js'
     ],
     postcss: [
-      require('autoprefixer')(),
+      require('autoprefixer')()
     ],
     /*
     ** Run ESLINT on save
