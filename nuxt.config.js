@@ -48,7 +48,6 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   plugins: [
-    { src: '~plugins/vue-analytics.js', ssr: false },
     { src: '~plugins/vue-i18n.js' }
   ],
   /*
@@ -62,7 +61,6 @@ module.exports = {
   */
   build: {
     vendor: [
-      'vue-analytics',
       'vue-i18n',
       'axios',
       'timing.js',
