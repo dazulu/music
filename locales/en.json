@@ -13,7 +13,8 @@
   },
   "about": {
     "title": "About Me",
-    "text": "<p>Hey there! I'm Adrian Payne. Born and raised in Ireland but now living in the beautiful city of Hamburg, Germany.</p><p>I've always had an interest in singing and musical theatre though never actually got around to doing all that much with it up until now. I recently started taking singing lessons and want to share the results with you as I go along. Maybe one day I can quit the day job and do this full time! Right? Right??</p>"
+    "text":
+      "<p>Hey there! I'm Adrian Payne. Born and raised in Ireland but now living in the beautiful city of Hamburg, Germany.</p><p>I've always had an interest in singing and musical theatre though never actually got around to doing all that much with it up until now. I recently started taking singing lessons and want to share the results with you as I go along. Maybe one day I can quit the day job and do this full time! Right? Right??</p>"
   },
   "contact": {
     "title": "Contact",
@@ -26,39 +27,48 @@
     "questions": [
       {
         "question": "What gear do you use to record audio?",
-        "answer": "<p>I switch between using a <a target=\"_blank\" rel=\"noopener\" href=\"http://www.rode.com/microphones/nt-usb\"><em>RØDE NT-USB</em></a> and a <a target=\"_blank\" rel=\"noopener\" href=\"http://www.rode.com/microphones/nt1-a\"><em>RØDE NT1-A</em></a> condenser mic put through a <a target=\"_blank\" rel=\"noopener\" href=\"https://us.focusrite.com/usb-audio-interfaces/scarlett-2i2\"><em>Focusrite Scarlett 2i2</em></a>. Sadly, my laptop has trouble with the latter combination so I only record with that on my PC.</p>"
+        "answer":
+          "<p>I switch between using a <a target=\"_blank\" rel=\"noopener\" href=\"http://www.rode.com/microphones/nt-usb\"><em>RØDE NT-USB</em></a> and a <a target=\"_blank\" rel=\"noopener\" href=\"http://www.rode.com/microphones/nt1-a\"><em>RØDE NT1-A</em></a> condenser mic put through a <a target=\"_blank\" rel=\"noopener\" href=\"https://us.focusrite.com/usb-audio-interfaces/scarlett-2i2\"><em>Focusrite Scarlett 2i2</em></a>. Sadly, my laptop has trouble with the latter combination so I only record with that on my PC.</p>"
       },
       {
         "question": "What gear do you use to record video?",
-        "answer": "<p>I use a <a href=\"http://www.logitech.com/en-us/product/c922-pro-stream-webcam\"><em>Logitech Pro Stream C922</em></a>. It's okay but it's not really made for this type of video recording so I don't get the quality I'd like with it. Looking out for a cheap Canon T3i (600D)!</p>"
+        "answer":
+          "<p>Depending on where I am, I use either a <a href=\"http://www.logitech.com/en-us/product/c922-pro-stream-webcam\"><em>Logitech Pro Stream C922</em></a>or a Canon Canon 600D (called a Rebel T3i in the US).</p>"
       },
       {
         "question": "What software do you use to create videos?",
-        "answer": "<p>While I'd love to get my hands on Adobe Premiere and After Affects, I currently use <a target=\"_blank\" rel=\"noopener\" href=\"https://filmora.wondershare.com/video-editor/\"><em>Wondershare Filmora</em></a> which I picked up cheap in a deal. It gets the job done for now!</p>"
+        "answer":
+          "<p>A mix of <a target=\"_blank\" rel=\"noopener\" href=\"https://filmora.wondershare.com/video-editor/\"><em>Wondershare Filmora</em></a>, <a target=\"_blank\" rel=\"noopener\" href=\"https://www.adobe.com/products/premiere.html\"><em>Adobe Premiere</em></a>, and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.adobe.com//products/aftereffects.html\"><em>Adobe After Effects</em></a> when I'm doing green screen work.</p>"
       },
       {
         "question": "What software do you use to edit audio?",
-        "answer": "<p>I use the completely free program <a target=\"_blank\" rel=\"noopener\" href=\"http://www.audacityteam.org/\"><em>Audacity</em></a> for all audio editing.</p>"
+        "answer":
+          "<p>I use the completely free program <a target=\"_blank\" rel=\"noopener\" href=\"http://www.audacityteam.org/\"><em>Audacity</em></a> for all audio editing.</p>"
       },
       {
         "question": "Where are you from?",
-        "answer": "<p>Born and raised in a small seaside town in the south east of Ireland. So I love the wind and the ocean!</p>"
+        "answer":
+          "<p>Born and raised in a small seaside town in the south east of Ireland. I love the wind and the ocean.</p>"
       },
       {
         "question": "Where did you get your website?",
-        "answer": "<p>All me and feedback/questions welcome! :) When not singing, I'm a web developer, which is what I learned in that blurry university period of life. The code is up on <a v-on:click=\"toGithub\" target=\"_blank\" rel=\"noopener\" href=\"https://github.com/dazulu/music\">Github</a> if you like that sort of thing.</p>"
+        "answer":
+          "<p>All me and feedback/questions welcome! :) When not singing, I'm a web developer. The code is up on <a v-on:click=\"toGithub\" target=\"_blank\" rel=\"noopener\" href=\"https://github.com/dazulu/music\">Github</a> if you like that sort of thing.</p>"
       },
       {
         "question": "Have you ever had voice training?",
-        "answer": "<p>I started getting voice lessons recently with <a target=\"_blank\" rel=\"noopener\" href=\"http://www.birtekoenigshoff.de/\">birtekoenigshoff.de</a>. She's great! Up until last year I had no training apart from listening to my dad rehearsing musical theatre when I was a kid. It stuck with me and I love that stuff!</p>"
+        "answer":
+          "<p>I started getting voice lessons recently with <a target=\"_blank\" rel=\"noopener\" href=\"http://www.birtekoenigshoff.de/\">birtekoenigshoff.de</a>. Up until 2017 I had no training apart from listening to my dad rehearsing musical theatre when I was a kid. It stuck with me and I love that stuff!</p>"
       },
       {
-        "question": "Where can I find you on social media?",
-        "answer": "<ul><li><strong>YouTube: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://www.youtube.com/channel/UCNYBL7n1Jk9CM3NRqapHaqw\">Adrian Payne's YouTube</a></li><li><strong>Patreon: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://www.patreon.com/adrianpayne\">patreon.com/adrianpayne</a></li><li><strong>Twitter: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://twitter.com/dazulu\">twitter.com/dazulu</a></li><li><strong>Instagram: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://www.instagram.com/teach_solais/\">instagram.com/teach_solais</a> and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.instagram.com/adrianpaynemusic/\">instagram.com/adrianpaynemusic</a></li></ul>"
+        "question": "Where can I find you on the internetz?",
+        "answer":
+          "<ul><li><strong>YouTube: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://www.youtube.com/channel/UCNYBL7n1Jk9CM3NRqapHaqw\">Adrian Payne's YouTube</a></li><li><strong>Patreon: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://www.patreon.com/adrianpayne\">patreon.com/adrianpayne</a></li><li><strong>Twitter: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://twitter.com/dazulu\">twitter.com/dazulu</a></li><li><strong>Instagram: </strong><a target=\"_blank\" rel=\"noopener\" href=\"https://www.instagram.com/teach_solais/\">instagram.com/teach_solais</a> and <a target=\"_blank\" rel=\"noopener\" href=\"https://www.instagram.com/adrianpaynemusic/\">instagram.com/adrianpaynemusic</a></li></ul>"
       },
       {
         "question": "How did you get here?",
-        "answer": "<p>If my dad hadn't joined a musical society when I was a kid, I don't think I would be. Thanks to him coming home rehearsing songs from Rodgers & Hammerstein and Gilbert & Sullivan to name a few, I picked up a liking for musicals and singing.</p>"
+        "answer":
+          "<p>If my dad hadn't joined a musical society when I was a kid, I don't think I'd be singing. Thanks to him coming home rehearsing songs from Rodgers & Hammerstein and Gilbert & Sullivan, to name a few, I picked up a liking for musicals and singing.</p>"
       }
     ]
   },
